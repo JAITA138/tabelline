@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="tabelline"/>
+        <attribute name="authors" value="viett"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-12-04 12:32:47 "/>
+        <attribute name="created" value="dmlldHQ7REVTS1RPUC1CQk9JOVBSOzIwMjQtMTItMDQ7IjEyOjAxOjE1ICI7MjgyMg=="/>
+        <attribute name="edited" value="dmlldHQ7REVTS1RPUC1CQk9JOVBSOzIwMjQtMTItMDQ7IjEyOjMyOjQ3ICI7MTsyOTM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <declare name="risposta" type="String" array="False" size=""/>
+            <do expression="risposta == &quot;S&#236;&quot;">
+                <output expression="&quot;Che tabellina vuoi?&quot;" newline="True"/>
+                <input variable="n"/>
+                <output expression="&quot;Hai scelto la tebellina del &quot;&amp;n" newline="True"/>
+                <for variable="i" start="1" end="10" direction="inc" step="1">
+                    <output expression="n &amp; &quot;x&quot; &amp; i &amp; &quot;=&quot; &amp; (n*i)" newline="True"/>
+                </for>
+                <output expression="&quot;Vuoi chiedere un altro numero?&quot;" newline="True"/>
+                <input variable="risposta"/>
+                <if expression="risposta== &quot;S&#236;&quot;">
+                    <then/>
+                    <else>
+                        <output expression="&quot;Ciclo finito&quot;" newline="True"/>
+                    </else>
+                </if>
+            </do>
+        </body>
+    </function>
+</flowgorithm>
